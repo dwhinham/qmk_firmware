@@ -16,9 +16,9 @@ void bootloader_jump(void) {
    NVIC_SystemReset();
 }
 
-#elif defined(STM32F3XX)
-/* This code should be checked whether it runs correctly on platforms. 
- * It was added for clueboard60 BUT HAS NOT BEEN TESTED.
+#elif defined(STM32F3XX) || defined(STM32L1XX)
+/* This code should be checked whether it runs correctly on platforms.
+ * It was added for clueboard60 and Anne Pro BUT HAS NOT BEEN TESTED.
  * FIXME - Test this
  */
 #define SYMVAL(sym) (uint32_t)(((uint8_t *)&(sym)) - ((uint8_t *)0))

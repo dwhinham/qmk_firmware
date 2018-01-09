@@ -1,1 +1,1 @@
-# The default keymap for clueboard 60%
+# The default keymap for Anne Pro
